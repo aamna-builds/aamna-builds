@@ -1,16 +1,26 @@
-## Hi there 👋
+# Hi, I'm Aamna 👋
 
-<!--
-**aamna-builds/aamna-builds** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Mechanical Engineering Student | Robotics Enthusiast | Builder
 
-Here are some ideas to get you started:
+## 🚀 About Me
+- Mechanical Engineering @ Ahmedabad University (Class of 2028)
+- Interested in Robotics, Automation & Embedded Systems
+- Passionate about hands-on fabrication & prototyping
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🛠️ Technical Skills
+- Arduino
+- MATLAB
+- Fusion360
+- SolidWorks
+- Circuit Design
+- Raspberry Pi
+
+## 🔧 Current Focus
+- Robotic Arm Development
+- Control Systems
+- Industrial Automation
+
+## 📫 Connect With Me
+LinkedIn: https://www.linkedin.com/in/aamnakhan17/
+Email: ww.aamnakhan1709@gmail.com
+
