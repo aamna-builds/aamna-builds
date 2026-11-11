@@ -7,7 +7,7 @@ So far that has meant three machines:
 - a two-wheeled robot that balances itself
 - a servo-driven desktop arm
 
-Each one goes from CAD and fabrication through wiring and firmware to a working build, and each comes with the analysis that explained what the hardware actually did.
+Each one runs from CAD and fabrication through wiring and firmware, and comes with the analysis behind it: the numbers that explained a problem, the decision it led to, and what is still open.
 
 I treat a robot as one problem rather than separate parts: the linkage and where it loses control, the torque that has to come from somewhere, the frame it stands on and the code that moves it. I also keep a clear note of what has run on real hardware and what has only run in simulation.
 
