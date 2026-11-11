@@ -51,11 +51,19 @@ Each repository has the analysis behind the build as well as the build itself: t
 
 ### Arms
 
-**[mearm-robotic-arm](https://github.com/aamna-builds/mearm-robotic-arm)**: a 4-DOF arm built in the SAE × Robonix 2025 robotics challenge. It is based on the open-source MeArm by Benjamin Gray and Jack Howard, cut in 4 mm acrylic, with four MG90S servos on an Arduino Uno. It picked a foam cube up and set it down across the table in about 15–20 s.
+**[mearm-robotic-arm](https://github.com/aamna-builds/mearm-robotic-arm)**: a 4-DOF desktop arm built in the SAE × Robonix 2025 robotics challenge. It is based on the open-source MeArm by Benjamin Gray and Jack Howard.
 
-- During the build: the Uno reset when the servos drew power from its 5 V pin, so they moved to a separate supply with a shared ground. A servo jittered because of a loose ground. Laser kerf on the thicker sheet meant trimming slots and filing the gripper.
-- Afterwards: a kinematics model showing that the busier servo carries about half its stall torque from gravity alone at full reach, which is where the elbow struggled. I also wrote position-control firmware that checks joint and linkage limits along the whole path before moving, cross-checked against MATLAB in CI.
-- Open: the link lengths are nominal MeArm values, and the IK firmware hasn't run on the arm yet.
+- **Built (July 2025):**
+  - Laser-cut 4 mm acrylic instead of the standard 3 mm, with slots and holes re-sized for the thicker sheet.
+  - Four MG90S servos on an Arduino Uno; the circuit was simulated in Tinkercad before wiring.
+  - It picked a foam cube up and set it down across the table in about 15–20 s.
+- **Fixed along the way:**
+  - The Uno reset whenever the servos drew from its 5 V pin, so they moved to a separate supply with a shared ground.
+  - A jittering servo turned out to have a loose ground.
+  - Laser kerf on the thicker sheet meant trimming slots and filing the gripper.
+- **Explained:** a kinematics model shows the busier servo carries about half its stall torque from gravity alone at full reach, which is where the elbow struggled.
+- **Software:** position-control firmware that checks joint and linkage limits along the whole path before moving, cross-checked against MATLAB in CI.
+- **Open:** the link lengths are nominal MeArm values, and the IK firmware hasn't run on the arm yet.
 
 <br>
 
@@ -66,6 +74,6 @@ Each repository has the analysis behind the build as well as the build itself: t
 - Each project says plainly what has run on hardware and what has only run in simulation.
 - Tests run in CI, so the work runs on someone else's machine too.
 
-**Tools:** SolidWorks · Fusion 360 and its scripting API · MATLAB and Simulink · Python · C/C++ on Arduino and ESP32 · Raspberry Pi · laser cutting, 3D printing, aluminium-extrusion frames · Git and GitHub Actions
+**Tools:** SolidWorks · Fusion 360 and its scripting API · AutoCAD · Tinkercad · MATLAB and Simulink · Python · C/C++ on Arduino and ESP32 · Raspberry Pi · laser cutting, 3D printing, aluminium-extrusion frames · Git and GitHub Actions
 
 [LinkedIn](https://www.linkedin.com/in/aamnakhan17/) · [Email](mailto:ww.aamnakhan1709@gmail.com)
