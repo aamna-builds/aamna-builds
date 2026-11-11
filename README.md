@@ -2,9 +2,14 @@
 
 Mechanisms, robotics and the hardware around them. B.Tech Mechanical Engineering, Ahmedabad University, class of 2028.
 
-I treat a robot as one problem rather than separate parts: the linkage and where it loses control, the torque that has to come from somewhere, the frame it stands on, the firmware that moves it, and a clear note of what has run on real hardware and what has only run in simulation.
+So far that has meant three machines:
+- a five-bar parallel linkage that plays chess by moving a magnet under the board
+- a two-wheeled robot that balances itself
+- a servo-driven desktop arm
 
-Each repository has the analysis behind the build as well as the build itself: the numbers that explained a problem, the decision it led to, and what is still open.
+Each one goes from CAD and fabrication through wiring and firmware to a working build, and each comes with the analysis that explained what the hardware actually did.
+
+I treat a robot as one problem rather than separate parts: the linkage and where it loses control, the torque that has to come from somewhere, the frame it stands on and the code that moves it. I also keep a clear note of what has run on real hardware and what has only run in simulation.
 
 <br>
 
