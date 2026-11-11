@@ -51,11 +51,11 @@ Each repository has the analysis behind the build as well as the build itself: t
 
 ### Arms
 
-**[mearm-robotic-arm](https://github.com/aamna-builds/mearm-robotic-arm)**: a 4-DOF arm in laser-cut 4 mm acrylic, with Arduino PWM control of four servos and scripted pick-and-place.
+**[mearm-robotic-arm](https://github.com/aamna-builds/mearm-robotic-arm)**: a 4-DOF arm built with team Byte & Bolt (Aryan Abhishekh, Khushi Shah, Nikkesh Parekh) in the SAE × Robonix 2025 challenge. It is based on the open-source MeArm by Benjamin Gray and Jack Howard, cut in 4 mm acrylic, with four MG90S servos on an Arduino Uno. It picked a foam cube up and set it down across the table in about 15–20 s.
 
-- The elbow ran short of torque at full extension.
-- The power supply and grounding decided how smooth the motion was.
-- Next: inverse kinematics and smoother trajectories.
+- During the build: the Uno reset when the servos drew power from its 5 V pin, so we moved them to a separate supply with a shared ground. A servo jittered because of a loose ground. Laser kerf on the thicker sheet meant trimming slots and filing the gripper.
+- Afterwards: a kinematics model showing that the busier servo carries about half its stall torque from gravity alone at full reach, which is where the elbow struggled. I also wrote position-control firmware that checks joint and linkage limits along the whole path before moving, cross-checked against MATLAB in CI.
+- Open: the link lengths are nominal MeArm values, and the IK firmware hasn't run on the arm yet.
 
 <br>
 
